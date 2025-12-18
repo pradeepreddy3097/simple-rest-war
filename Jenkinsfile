@@ -28,8 +28,7 @@ pipeline {                                    // 1  // Defines the start of the 
                 echo "----------- unit test completed ----------"  
                                               // Logs a message indicating unit test completion
             }                                 // 7  // Ends the steps block for 'test' stage
-        }                       
-     
+        }                                     // 6  // Ends the 'test' stage
 
         stage('SonarQube analysis') {         // 8  // Creates a stage named 'SonarQube analysis'
             environment {                     // 9  // Defines environment variables specific to this stage
@@ -48,4 +47,3 @@ pipeline {                                    // 1  // Defines the start of the 
 
     }                                         // 3  // Ends the stages block
 }                                             // 1  // Ends the pipeline block
-
